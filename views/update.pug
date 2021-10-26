@@ -1,0 +1,17 @@
+doctype html 
+html 
+    head
+    style
+      include ../static/styleSheets/update.css
+    body 
+        p give update information 
+            form(action="/update" method="post")
+            span name 
+            input#name(type="text", name="upname" placeholder="enter your name")
+            span Adhar
+            input#adhar(type="number", name="upadhar" placeholder="adhar")
+            span Phone 
+            input#phone(type="number", name="upphone" placeholder="phone") 
+            button#update update
+            script
+                include ../static/js/main.js

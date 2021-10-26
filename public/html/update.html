@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // main.js
+    const update = document.querySelector('#update')
+    console.log("working")
+    update.addEventListener('click', _ => {
+    // fetch(endpoint, options) -syntax of the fetch api
+    console.log("working")
+    fetch('/update', {
+        method: 'put'
+      })
+})
+    </script>
+
+    <form action="/update">
+    <input type="text" name="naem" id="name">
+    <button id="update" >update</button>
+    </form>
+    <img src="../public/img/img.jpeg" alt="this is a image">
+</body>
+</html>
